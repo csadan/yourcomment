@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ title }}</title>
+		<link rel='stylesheet' href='/stylesheets/style.css' />
+	</head>
+	<body class="admin">
+		<p>{{repeatUser}}</p>
+		<div class="container">
+			<form action="/newuser" method="post">
+				Username:<br />
+				<input type="text" name="username" placeholder="Username"/><br required/>
+				Email:<br />
+				<input type="email" name="email" placeholder="email@server.com" required/><br />
+				Password:<br />
+				<input type="password" name="password" required/><br /><br />
+				<input type="submit" value="Register" />
+			</form>
+		</div>
+	</body>
+</html>

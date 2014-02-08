@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ title }}</title>
+		<link rel='stylesheet' href='/stylesheets/style.css' />
+	</head>
+	<body class="admin">
+		<p>{{notExist}}</p>
+		<div class="container">
+			<form action="/login" method="post">
+				Username:<br />
+				<input type="text" name="username" placeholder="Username"/><br autofocus="autofocus" required/>
+				Password:<br />
+				<input type="password" name="password" required/><br />
+				<a href="/register">Registrarse</a><br />
+				<input style="margin-top:5px" type="submit" value="Login" />
+			</form>
+		</div>
+	</body>
+</html>
